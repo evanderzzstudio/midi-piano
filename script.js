@@ -39,5 +39,8 @@ function getNoteDetail(keyboardKey) {
 }
 
 function playNotes() {
-    console.log("play notes")
+    NOTE_DETAILS.forEach(n => {
+        document.querySelector(`[data-note="${n.note}"]`)
+        console.log(keyElement)
+    })
 }
