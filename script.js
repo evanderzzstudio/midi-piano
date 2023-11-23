@@ -29,6 +29,9 @@ document.addEventListener("keyup", e => {
     const noteDetail = getNoteDetail(keyboardKey)
 
     if (noteDetail == null) return
+
+    noteDetail.active = false
+    playNotes()
 })
 
 function getNoteDetail(keyboardKey) {
