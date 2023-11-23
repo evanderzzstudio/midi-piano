@@ -12,3 +12,13 @@ const NOTE_DETAILS = [
     { note: "Bb", key: "J", frequency: 466.164 },
     { note: "B", key: "M", frequency: 493.883 }
 ]
+
+document.addEventListener("keydown", e => {
+    console.log("Down")
+    console.log(e)
+})
+
+document.addEventListener("keyup", e => {
+    console.log("Up")
+    console.log(e)
+})
