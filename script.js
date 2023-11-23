@@ -25,8 +25,10 @@ document.addEventListener("keydown", e => {
 })
 
 document.addEventListener("keyup", e => {
-    console.log("Up")
-    console.log(e)
+    const keyboardKey = e.code
+    const noteDetail = getNoteDetail(keyboardKey)
+
+    if (noteDetail == null) return
 })
 
 function getNoteDetail(keyboardKey) {
