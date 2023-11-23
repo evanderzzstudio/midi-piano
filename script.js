@@ -21,6 +21,7 @@ document.addEventListener("keydown", e => {
     if (noteDetail == null) return
 
     noteDetail.active = true
+    playNotes()
 })
 
 document.addEventListener("keyup", e => {
@@ -30,4 +31,8 @@ document.addEventListener("keyup", e => {
 
 function getNoteDetail(keyboardKey) {
     return NOTE_DETAILS.find(n => "Key${n.key}" === keyboardKey)
+}
+
+function playNotes() {
+    console.log("play notes")
 }
